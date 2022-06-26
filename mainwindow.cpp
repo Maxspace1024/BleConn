@@ -169,7 +169,7 @@ void MainWindow::on_servicesLW_currentRowChanged(int currentRow)
 void MainWindow::on_characLW_currentRowChanged(int currentRow)
 {
     int sRow = ui->servicesLW->currentRow();
-    if(0 <= sRow && sRow < servicesList.size())
+    if(0 <= sRow && sRow <= servicesList.size())
     {
         QLowEnergyService* serv = servicesList.at(sRow);
 
